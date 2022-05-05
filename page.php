@@ -12,17 +12,21 @@ while(have_posts()) {
       </div>
     </div>
     <?php if (is_page('About')) {?>
-    <div class="grid-wrapper">
-  <div class="box a page-content-container">
+    <div class="about-container">
+  <div class="about-content-container">
     <?php echo get_the_content(); ?>
   </div>  
-  <div class="box b image-container">
+  <div class="about-content-container">
   <img src="<? echo get_theme_file_uri('/images/profile1.jpg') ?>" class="main-profile" />
   </div> 
 </div>
   
 <?php
-    } else {
+    } if (is_page('Reviews')){ ?>
+      <div class="reviews">
+    <?php  echo do_shortcode( '[grw id="142"]' );?>
+    </div>
+   <?php } else {
         ?>
         <div class="services-content-container">
     <?php echo get_the_content(); ?>
