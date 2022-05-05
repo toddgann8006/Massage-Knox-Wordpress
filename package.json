@@ -1,0 +1,29 @@
+{
+  "name": "massage-knox-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "devFast": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toddgann8006/Massage-Knox-Wordpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toddgann8006/Massage-Knox-Wordpress/issues"
+  },
+  "homepage": "https://github.com/toddgann8006/Massage-Knox-Wordpress#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "normalize.css": "^8.0.1",
+    "@wordpress/scripts": "*"
+  }
+}

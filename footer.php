@@ -7,8 +7,8 @@
         </section>
         <section class="footer-col">
          <h4>Connect With Us</h4>
-           <p><a href="#" class="social-color"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
-           <p><a href="#" class="social-color"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+           <p><a href="https://www.facebook.com/massageknox/?ref=py_c" target="_blank" class="social-color"><i class="fa fa-facebook" aria-hidden="true"></i></a></p>
+           <p><a href="mailto:shannoncox@massageknox.com" class="social-color"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
        </section>
         <section class="footer-col">
           <h4>Hours of Availability</h4>
@@ -21,7 +21,8 @@
         </section>
     </div>
 </footer>
-
-    <script src="build/index.js"></script>
+<?php
+    wp_footer();
+?>
   </body>
 </html>
