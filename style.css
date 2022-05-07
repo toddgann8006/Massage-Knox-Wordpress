@@ -113,8 +113,8 @@ h4 {
     background-repeat: no-repeat;
     background-attachment: fixed;
     opacity: 0.8;
-    height: 40vh;
-    max-width: 100%;
+    height: 25vh;
+    width: 100%;
 }
 
 .image-header {
@@ -124,8 +124,32 @@ h4 {
     justify-content: start;
     text-align: start;
     color: yellow;
-    font-size: 30px;
+    font-size: 20px;
     padding-left: 50px;
+}
+
+@media screen and (min-width: 450px) {
+    .image-container {
+        text-align: center;
+        background-position: relative;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.8;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .image-header {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+        color: yellow;
+        font-size: 20px;
+        padding-left: 50px;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -361,11 +385,42 @@ h4 {
     width: 80%;
     color: white;
     margin: auto;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .about-content-container {
-    margin-top: 5%;
+    margin-top: 2%;
+}
+
+.about-profile {
+    object-fit: scale-down;
+    max-width: 85%;
+    padding-bottom: 5%;
+}
+
+@media (min-width: 500px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        width: 80%;
+        color: white;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .about-content-container {
+        margin-top: 5%;
+    }
+
+    .about-profile {
+        object-fit: scale-down;
+        max-width: 90%;
+        height: 450px;
+        padding-bottom: 0;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -396,6 +451,7 @@ h4 {
 .services-content-container {
     width: 80%;
     margin: auto;
+    padding-bottom: 10%;
 }
 
 .button-padding {
@@ -408,12 +464,38 @@ h4 {
     text-align: center;
     max-width: 100%;
     color: white;
-    margin: 50px auto 0 auto;
+    margin: 40px auto 0 auto;
 }
 
 .map-content-container {
-    margin: 2% 0 3% 0;
     object-fit: cover
+}
+
+.main-logo {
+    object-fit: scale-down;
+    max-width: 85%;
+    padding-bottom: 5%;
+}
+
+@media(min-width: 500px) {
+    .map-container {
+        text-align: center;
+        max-width: 100%;
+        color: white;
+        margin: 50px auto 0 auto;
+    }
+
+    .map-content-container {
+        margin: 2% 0 3% 0;
+        object-fit: cover
+    }
+
+    .main-logo {
+        object-fit: scale-down;
+        max-width: 90%;
+        height: 450px;
+        padding-bottom: 0;
+    }
 }
 
 @media (min-width: 800px) {
@@ -425,7 +507,7 @@ h4 {
     }
 
     .map-content-container {
-        margin: 2% 0 4% 0;
+        margin: 2% 0 2% 0;
         object-fit: cover
     }
 }
@@ -452,8 +534,22 @@ h4 {
 }
 
 iframe {
-    width: 500px;
-    height: 375px;
+    width: 320px;
+    height: 240px;
+}
+
+@media (min-width: 400px) {
+    iframe {
+        width: 360px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 500px) {
+    iframe {
+        width: 500px;
+        height: 375px;
+    }
 }
 
 @media (min-width: 800px) {

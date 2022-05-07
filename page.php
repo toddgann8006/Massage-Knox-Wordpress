@@ -37,6 +37,11 @@ while(have_posts()) {
 
 <?php
 }
+?>
+
+<hr>
+
+<?php
 
 get_footer();
 
