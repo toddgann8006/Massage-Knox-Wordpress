@@ -26,7 +26,7 @@ while(have_posts()) {
       <div class="reviews">
     <?php  echo do_shortcode( '[grw id="142"]' );?>
     </div>
-   <?php } else {
+   <?php } if(!is_page('About') && !is_page('Reviews')) {
         ?>
         <div class="services-content-container">
     <?php echo get_the_content(); ?>

@@ -15,3 +15,8 @@ add_action( 'init', 'wpb_custom_new_menu' );
 
 add_filter('widget_text', 'do_shortcode');
 
+function show_post($path) {
+  $post = get_page_by_path($path);
+  $content = apply_filters('the_content', $post->post_content);
+  echo $content;
+}
