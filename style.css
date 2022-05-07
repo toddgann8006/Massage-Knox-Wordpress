@@ -58,96 +58,11 @@ li a:hover {
     max-width: 960px;
 }
 
-.float-left {
-    float: left;
-}
-
-.float-right {
-    float: right;
-}
-
-.massage-logo-text {
-    position: relative;
-    z-index: 20;
-    margin: 0;
-    font-size: 1.75rem;
-    font-weight: 100;
-}
-
-.massage-logo-text strong {
-    font-weight: 400;
-}
-
-.massage-logo-text a {
-    color: yellow;
-    text-decoration: none;
-}
-
-.massage-logo-text--alt-color a {
-    color: #666;
-}
-
-.massage-logo-text--alt-color a:hover {
-    color: #faf0ca;
-    text-decoration: underline;
-}
-
-.main-navigation {
-    padding-top: 2px;
-}
-
-.main-navigation ul {
-    padding: 0;
-    margin: 0;
-}
-
-.main-navigation ul:before,
-.main-navigation ul:after {
-    content: " ";
-    display: table;
-}
-
-.main-navigation ul:after {
-    clear: both;
-}
-
-@media (min-width: 960px) {
-    .main-navigation {
-        float: left;
-        margin-right: 20px;
-    }
-}
-
-.main-navigation li {
-    list-style: none;
-}
-
-@media (min-width: 960px) {
-    .main-navigation li {
-        float: left;
-        padding-left: 20px;
-    }
-}
-
-.main-navigation a {
-    display: block;
-    padding: 10px 20px;
-    color: yellow;
-    text-decoration: none;
-    font-weight: 300;
-}
-
-@media (min-width: 960px) {
-    .main-navigation a {
-        display: inline-block;
-        padding: 0;
-    }
-}
+/* Footer styles */
 
 #footer-main {
     background-color: black;
-    border: solid 1px black;
-    padding: 60px;
+    padding: 0 60px 60px 60px;
     color: yellow;
 }
 
@@ -183,18 +98,6 @@ h4 {
     color: white;
     font-size: 1.5rem;
     padding: 5px 10px;
-}
-
-.main-logo {
-    object-fit: scale-down;
-    max-width: 90%;
-    height: 450px;
-}
-
-.main-headshot {
-    object-fit: scale-down;
-    max-width: 90%;
-    height: 450px;
 }
 
 .main-profile {
@@ -248,7 +151,7 @@ h4 {
         font-size: 30px;
         padding-left: 50px;
         padding-top: 20px;
-        margin-top: 90px;
+        margin-top: 80px;
     }
 }
 
@@ -262,30 +165,19 @@ h4 {
         background-image: url('./images/tapestry.jpg');
         opacity: 0.8;
         height: 70vh;
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     .image-header {
         display: flex;
         flex-direction: row;
-        margin-top: 100px;
+        margin-top: 80px;
         align-items: center;
         justify-content: start;
         text-align: center;
         padding: 80px 0 0 80px;
         font-size: 40px;
     }
-}
-
-.logo-image-caption {
-    color: yellow;
-    padding-bottom: 30px;
-}
-
-.headshot-image-caption {
-    color: yellow;
-    padding-bottom: 30px;
-    font-size: 14px;
 }
 
 /* Page.php Styles */
@@ -494,7 +386,7 @@ h4 {
         justify-content: center;
         align-items: center;
         color: white;
-        padding: 5%;
+        padding: 5% 5% 0 5%;
         margin-top: 5%;
         font-size: 20px;
         margin: auto;
@@ -520,8 +412,22 @@ h4 {
 }
 
 .map-content-container {
-    margin-top: 2%;
+    margin: 2% 0 3% 0;
     object-fit: cover
+}
+
+@media (min-width: 800px) {
+    .map-container {
+        text-align: center;
+        max-width: 100%;
+        color: white;
+        margin: 50px auto 0 auto;
+    }
+
+    .map-content-container {
+        margin: 2% 0 4% 0;
+        object-fit: cover
+    }
 }
 
 @media (min-width: 1400px) {
