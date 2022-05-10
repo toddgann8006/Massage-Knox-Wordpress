@@ -10,7 +10,7 @@
 </div>
 <div class="bottom-text-container">
     <h5>Located Inside Nourish Skin Studio</h5>
-  </div>
+</div>
   <hr>
 <div class="about-container"> 
   <div class="about-image-container">
